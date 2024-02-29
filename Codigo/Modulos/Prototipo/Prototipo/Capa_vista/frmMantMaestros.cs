@@ -12,7 +12,9 @@ namespace Vista_PrototipoMenu
 {
     public partial class frmMantMaestros : Form
     {
-        public frmMantMaestros()
+        //DAVID CARRILLO
+        //MANTENIMIENTO DE MAESTROS 
+          public frmMantMaestros()
         {
             InitializeComponent();
             this.navegador1.config("maestros", this, "");

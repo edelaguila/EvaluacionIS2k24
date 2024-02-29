@@ -102,5 +102,13 @@ namespace Vista_PrototipoMenu
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmMantMaestros form = new frmMantMaestros();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
     }
 }
