@@ -30,15 +30,15 @@ namespace MenuHCV
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.TBcontrasena = new System.Windows.Forms.TextBox();
-            this.TBusuario = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.TBcontrasena = new System.Windows.Forms.TextBox();
+            this.TBusuario = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -63,6 +63,20 @@ namespace MenuHCV
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(428, 449);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Image = global::Vista_MenuHCV.Properties.Resources.ic_cancel_97589;
+            this.pictureBox4.Location = new System.Drawing.Point(396, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(27, 28);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
             // 
             // checkBox1
             // 
@@ -96,6 +110,42 @@ namespace MenuHCV
             this.button2.Text = "¿Olvidaste tu Contraseña?";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Image = global::Vista_MenuHCV.Properties.Resources.bloquear;
+            this.pictureBox3.Location = new System.Drawing.Point(75, 257);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 28);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Image = global::Vista_MenuHCV.Properties.Resources.user;
+            this.pictureBox2.Location = new System.Drawing.Point(76, 192);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(35, 28);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Image = global::Vista_MenuHCV.Properties.Resources.Imagen3;
+            this.pictureBox1.Location = new System.Drawing.Point(139, 26);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(152, 122);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -137,55 +187,6 @@ namespace MenuHCV
             this.TBusuario.Name = "TBusuario";
             this.TBusuario.Size = new System.Drawing.Size(193, 27);
             this.TBusuario.TabIndex = 0;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Image = global::Vista_MenuHCV.Properties.Resources.ic_cancel_97589;
-            this.pictureBox4.Location = new System.Drawing.Point(396, 4);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(27, 28);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Image = global::Vista_MenuHCV.Properties.Resources.bloquear;
-            this.pictureBox3.Location = new System.Drawing.Point(75, 257);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 28);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Image = global::Vista_MenuHCV.Properties.Resources.user;
-            this.pictureBox2.Location = new System.Drawing.Point(76, 192);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 28);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Image = global::Vista_MenuHCV.Properties.Resources.Imagen3;
-            this.pictureBox1.Location = new System.Drawing.Point(139, 26);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 122);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 

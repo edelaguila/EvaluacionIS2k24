@@ -97,5 +97,13 @@ namespace Vista_PrototipoMenu
         {
             Help.ShowHelp(this, "umg.chm");            
         }
-     }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmSedes form = new frmSedes();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+    }
 }
