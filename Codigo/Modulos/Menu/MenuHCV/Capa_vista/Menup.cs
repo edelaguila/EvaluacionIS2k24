@@ -105,6 +105,8 @@ namespace MenuHCV
         private void btnPrototipo_Click(object sender, EventArgs e)
         {
             cn.setBtitacora("8000", "Ingreso Prototipo");
+            Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
+            form.Show();
         }
 
     }

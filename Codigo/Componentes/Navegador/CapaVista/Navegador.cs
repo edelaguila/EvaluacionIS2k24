@@ -91,17 +91,9 @@ namespace CapaVista
             }
         }
 
-        public void config(string tabla, Form parent)
+        public void config(string tabla, Form parent, string _id = "1000")
         {
-            if (this.Tag.ToString().Equals(""))
-            {
-                MessageBox.Show("Debe Colocar el IdApp como tag del formulario");
-                return;
-            }
-            else
-            {
-                this.idApp = this.Tag.ToString();
-            }
+            this.idApp = _id;
             this.tabla = tabla;
             this.tabla_cmb = "";
             this.parent = parent;

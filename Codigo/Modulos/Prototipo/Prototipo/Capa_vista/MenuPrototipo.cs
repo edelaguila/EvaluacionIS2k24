@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad_Controlador;
+using CapaVista_RegAlum;
 
 namespace Vista_PrototipoMenu
 {
@@ -76,7 +77,7 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-            frmAplicaciones form = new frmAplicaciones();
+            CapaVista_RegAlum.Registro_Estudiantes form = new CapaVista_RegAlum.Registro_Estudiantes();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();
