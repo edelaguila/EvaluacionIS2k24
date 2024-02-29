@@ -57,7 +57,7 @@ namespace Vista_PrototipoMenu
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(555, 209);
+            this.panelLogo.Size = new System.Drawing.Size(555, 244);
             this.panelLogo.TabIndex = 0;
             // 
             // btninicio
@@ -69,7 +69,7 @@ namespace Vista_PrototipoMenu
             this.btninicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninicio.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btninicio.Location = new System.Drawing.Point(0, 209);
+            this.btninicio.Location = new System.Drawing.Point(0, 244);
             this.btninicio.Margin = new System.Windows.Forms.Padding(4);
             this.btninicio.Name = "btninicio";
             this.btninicio.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -89,7 +89,7 @@ namespace Vista_PrototipoMenu
             this.btnmanteniminetos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmanteniminetos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmanteniminetos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnmanteniminetos.Location = new System.Drawing.Point(0, 269);
+            this.btnmanteniminetos.Location = new System.Drawing.Point(0, 304);
             this.btnmanteniminetos.Margin = new System.Windows.Forms.Padding(4);
             this.btnmanteniminetos.Name = "btnmanteniminetos";
             this.btnmanteniminetos.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -105,7 +105,7 @@ namespace Vista_PrototipoMenu
             this.panelTranportes.BackColor = System.Drawing.Color.LightSlateGray;
             this.panelTranportes.Controls.Add(this.btnaplicaciones);
             this.panelTranportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTranportes.Location = new System.Drawing.Point(0, 329);
+            this.panelTranportes.Location = new System.Drawing.Point(0, 364);
             this.panelTranportes.Margin = new System.Windows.Forms.Padding(4);
             this.panelTranportes.Name = "panelTranportes";
             this.panelTranportes.Size = new System.Drawing.Size(555, 231);
@@ -138,7 +138,7 @@ namespace Vista_PrototipoMenu
             this.btnProcesos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProcesos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProcesos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnProcesos.Location = new System.Drawing.Point(0, 560);
+            this.btnProcesos.Location = new System.Drawing.Point(0, 595);
             this.btnProcesos.Margin = new System.Windows.Forms.Padding(4);
             this.btnProcesos.Name = "btnProcesos";
             this.btnProcesos.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -153,7 +153,7 @@ namespace Vista_PrototipoMenu
             // 
             this.PanelAuditoria.BackColor = System.Drawing.Color.LightSlateGray;
             this.PanelAuditoria.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelAuditoria.Location = new System.Drawing.Point(0, 620);
+            this.PanelAuditoria.Location = new System.Drawing.Point(0, 655);
             this.PanelAuditoria.Margin = new System.Windows.Forms.Padding(4);
             this.PanelAuditoria.Name = "PanelAuditoria";
             this.PanelAuditoria.Size = new System.Drawing.Size(555, 168);
@@ -169,7 +169,7 @@ namespace Vista_PrototipoMenu
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnReportes.Location = new System.Drawing.Point(0, 788);
+            this.btnReportes.Location = new System.Drawing.Point(0, 823);
             this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -184,7 +184,7 @@ namespace Vista_PrototipoMenu
             // 
             this.panelseguridad.BackColor = System.Drawing.Color.LightSlateGray;
             this.panelseguridad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelseguridad.Location = new System.Drawing.Point(0, 848);
+            this.panelseguridad.Location = new System.Drawing.Point(0, 883);
             this.panelseguridad.Margin = new System.Windows.Forms.Padding(4);
             this.panelseguridad.Name = "panelseguridad";
             this.panelseguridad.Size = new System.Drawing.Size(555, 69);
@@ -200,7 +200,7 @@ namespace Vista_PrototipoMenu
             this.btnSeguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeguridad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeguridad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnSeguridad.Location = new System.Drawing.Point(0, 917);
+            this.btnSeguridad.Location = new System.Drawing.Point(0, 952);
             this.btnSeguridad.Margin = new System.Windows.Forms.Padding(4);
             this.btnSeguridad.Name = "btnSeguridad";
             this.btnSeguridad.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -215,7 +215,7 @@ namespace Vista_PrototipoMenu
             // 
             this.panelayuda.BackColor = System.Drawing.Color.LightSlateGray;
             this.panelayuda.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelayuda.Location = new System.Drawing.Point(0, 977);
+            this.panelayuda.Location = new System.Drawing.Point(0, 1012);
             this.panelayuda.Margin = new System.Windows.Forms.Padding(4);
             this.panelayuda.Name = "panelayuda";
             this.panelayuda.Size = new System.Drawing.Size(555, 63);
@@ -231,7 +231,7 @@ namespace Vista_PrototipoMenu
             this.btnayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnayuda.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnayuda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnayuda.Location = new System.Drawing.Point(0, 1040);
+            this.btnayuda.Location = new System.Drawing.Point(0, 1075);
             this.btnayuda.Margin = new System.Windows.Forms.Padding(4);
             this.btnayuda.Name = "btnayuda";
             this.btnayuda.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -275,7 +275,7 @@ namespace Vista_PrototipoMenu
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnsalir.Location = new System.Drawing.Point(0, 1100);
+            this.btnsalir.Location = new System.Drawing.Point(0, 1135);
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -290,11 +290,12 @@ namespace Vista_PrototipoMenu
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::Vista_PrototipoMenu.Properties.Resources.prototipofinal2;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 13);
+            this.pictureBox1.Image = global::Vista_PrototipoMenu.Properties.Resources.umg;
+            this.pictureBox1.Location = new System.Drawing.Point(159, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(277, 186);
+            this.pictureBox1.Size = new System.Drawing.Size(225, 225);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -310,6 +311,7 @@ namespace Vista_PrototipoMenu
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Prototipo";
             this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
             this.panelTranportes.ResumeLayout(false);
             this.panelSideMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

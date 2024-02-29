@@ -31,19 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaVistaNav, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\NavegadorTemporal\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
+    </Reference>
     <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Controlador_PrototipoMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.dll</HintPath>
     </Reference>
-    <Reference Include="eCryptography, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Eramake.eCryptography.1.1.6\lib\net45\eCryptography.dll</HintPath>
-    </Reference>
     <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
-    </Reference>
-    <Reference Include="NavegadorVista">
-      <HintPath>..\..\..\..\..\..\..\ProyectosdeReferencia\Prototipos\proyectois2k23\Codigo\Componentes\Navegador\Vista\bin\Debug\NavegadorVista.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -177,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\umg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
