@@ -40,7 +40,23 @@ namespace CapaVista
             //MessageBox.Show("Realizando bitacora");
         }
 
-
+        public void _initSeguridad(string idApp = "1000", string user = "admin", string pass = "12345", string idUser = null)
+        {
+            if (idUser != null)
+            {
+                Seguridad_Controlador.Controlador.idUser = idUser;
+                return;
+            }
+            this.idApp = idApp;
+            string encriptado = this.SetHash(pass);
+            bool login = ctrl_seguridad.validarLogin(user, encriptado);
+            if (!login)
+            {
+                MessageBox.Show("Error, se ha denegado el accesso departe de seguridad");
+                return;
+            }
+            this.loadButtons();
+        }
 
         public void loadButtons()
         {
@@ -62,6 +78,18 @@ namespace CapaVista
         }
 
 
+        public string SetHash(string inputString)
+        {
+            string hash = "x2";
+            byte[] bytes = UTF8Encoding.UTF8.GetBytes(inputString);
+            MD5 mD5 = MD5.Create();
+            TripleDES tripleDES = TripleDES.Create();
+            tripleDES.Key = mD5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
+            tripleDES.Mode = CipherMode.ECB;
+            ICryptoTransform transform = tripleDES.CreateEncryptor();
+            byte[] output = transform.TransformFinalBlock(bytes, 0, bytes.Length);
+            return Convert.ToBase64String(output);
+        }
 
         public void fillCombo()
         {
@@ -91,19 +119,10 @@ namespace CapaVista
             }
         }
 
-        public void config(string tabla, Form parent)
+        public void config(string tabla, Form parent, string tabla2)
         {
-            if (this.Tag.ToString().Equals(""))
-            {
-                MessageBox.Show("Debe Colocar el IdApp como tag del formulario");
-                return;
-            }
-            else
-            {
-                this.idApp = this.Tag.ToString();
-            }
             this.tabla = tabla;
-            this.tabla_cmb = "";
+            this.tabla_cmb = tabla2;
             this.parent = parent;
             this.utilConsultasI.setTabla(this.tabla);
             DataGridView gd = GetDGV(this.parent);
@@ -119,8 +138,6 @@ namespace CapaVista
             gd.CellClick += this.data_Click;
             this.utilConsultasI.refrescar(this.parent);
             this.cambiarEstado(false);
-            this.loadButtons();
-            gd.AllowUserToAddRows = false;
         }
 
 
@@ -374,6 +391,7 @@ namespace CapaVista
                 filaActual++;
                 gd.Rows[filaActual].Selected = true;
                 focusData((DataTable)gd.DataSource);
+
             }
             else
             {

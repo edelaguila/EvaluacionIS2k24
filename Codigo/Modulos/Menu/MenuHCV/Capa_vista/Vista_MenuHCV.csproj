@@ -69,7 +69,7 @@
       <HintPath>..\..\..\..\..\..\..\..\ProyectosFinales\proyectoads22023\Codigo\Modulos\Nominas\Capa_vista\bin\Debug\Vista_NominasMenu.dll</HintPath>
     </Reference>
     <Reference Include="Vista_PrototipoMenu">
-      <HintPath>..\..\..\..\..\..\..\..\ProyectosFinales\proyectoads22023\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Vista_PrototipoMenu.dll</HintPath>
+      <HintPath>..\..\..\Prototipo\Prototipo\Capa_vista\bin\Debug\Vista_PrototipoMenu.dll</HintPath>
     </Reference>
     <Reference Include="Vista_Seguridad">
       <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Vista_Seguridad.dll</HintPath>
