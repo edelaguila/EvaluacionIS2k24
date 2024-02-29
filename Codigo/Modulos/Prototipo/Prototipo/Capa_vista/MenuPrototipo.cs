@@ -21,7 +21,7 @@ namespace Vista_PrototipoMenu
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            Button[] apps = {btnaplicaciones};
+            Button[] apps = {btnfacultades};
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             cn.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
@@ -74,7 +74,9 @@ namespace Vista_PrototipoMenu
         }
         //Método que muestra el formulario indicado
         //Método que muestra el formulario indicado
-        private void btnaplicaciones_Click(object sender, EventArgs e)
+
+        //Boton que muestra el mantenimiento de facultades
+        private void btnfacultades_Click(object sender, EventArgs e)
         {
             frmMantFacultades form = new frmMantFacultades();
            form.MdiParent = this;
@@ -103,7 +105,8 @@ namespace Vista_PrototipoMenu
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        //Boton para el mantenimiento de los maestros
+        private void btnmaestros_Click(object sender, EventArgs e)
         {
             frmMantMaestros form = new frmMantMaestros();
             form.MdiParent = this;

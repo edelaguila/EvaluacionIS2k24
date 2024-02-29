@@ -36,7 +36,8 @@ namespace Vista_PrototipoMenu
             this.btninicio = new System.Windows.Forms.Button();
             this.btnmanteniminetos = new System.Windows.Forms.Button();
             this.panelTranportes = new System.Windows.Forms.Panel();
-            this.btnaplicaciones = new System.Windows.Forms.Button();
+            this.btnmaestros = new System.Windows.Forms.Button();
+            this.btnfacultades = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
             this.PanelAuditoria = new System.Windows.Forms.Panel();
             this.btnReportes = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@ namespace Vista_PrototipoMenu
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
@@ -95,10 +95,10 @@ namespace Vista_PrototipoMenu
             this.pictureBox1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::Vista_PrototipoMenu.Properties.Resources.logo_umg;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 31);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 146);
+            this.pictureBox1.Size = new System.Drawing.Size(214, 201);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -145,8 +145,8 @@ namespace Vista_PrototipoMenu
             // panelTranportes
             // 
             this.panelTranportes.BackColor = System.Drawing.Color.LightSlateGray;
-            this.panelTranportes.Controls.Add(this.button1);
-            this.panelTranportes.Controls.Add(this.btnaplicaciones);
+            this.panelTranportes.Controls.Add(this.btnmaestros);
+            this.panelTranportes.Controls.Add(this.btnfacultades);
             this.panelTranportes.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTranportes.Location = new System.Drawing.Point(0, 329);
             this.panelTranportes.Margin = new System.Windows.Forms.Padding(4);
@@ -155,22 +155,39 @@ namespace Vista_PrototipoMenu
             this.panelTranportes.TabIndex = 3;
             this.panelTranportes.Visible = false;
             // 
-            // btnaplicaciones
+            // btnmaestros
             // 
-            this.btnaplicaciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnaplicaciones.FlatAppearance.BorderSize = 0;
-            this.btnaplicaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnaplicaciones.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btnaplicaciones.Location = new System.Drawing.Point(0, 0);
-            this.btnaplicaciones.Margin = new System.Windows.Forms.Padding(4);
-            this.btnaplicaciones.Name = "btnaplicaciones";
-            this.btnaplicaciones.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btnaplicaciones.Size = new System.Drawing.Size(555, 66);
-            this.btnaplicaciones.TabIndex = 3;
-            this.btnaplicaciones.Text = "FACULTADES";
-            this.btnaplicaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnaplicaciones.UseVisualStyleBackColor = true;
-            this.btnaplicaciones.Click += new System.EventHandler(this.btnaplicaciones_Click);
+            this.btnmaestros.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnmaestros.FlatAppearance.BorderSize = 0;
+            this.btnmaestros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmaestros.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btnmaestros.Location = new System.Drawing.Point(0, 66);
+            this.btnmaestros.Margin = new System.Windows.Forms.Padding(4);
+            this.btnmaestros.Name = "btnmaestros";
+            this.btnmaestros.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnmaestros.Size = new System.Drawing.Size(555, 66);
+            this.btnmaestros.TabIndex = 4;
+            this.btnmaestros.Text = "MAESTROS";
+            this.btnmaestros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnmaestros.UseVisualStyleBackColor = true;
+            this.btnmaestros.Click += new System.EventHandler(this.btnmaestros_Click);
+            // 
+            // btnfacultades
+            // 
+            this.btnfacultades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnfacultades.FlatAppearance.BorderSize = 0;
+            this.btnfacultades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnfacultades.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btnfacultades.Location = new System.Drawing.Point(0, 0);
+            this.btnfacultades.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfacultades.Name = "btnfacultades";
+            this.btnfacultades.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnfacultades.Size = new System.Drawing.Size(555, 66);
+            this.btnfacultades.TabIndex = 3;
+            this.btnfacultades.Text = "FACULTADES";
+            this.btnfacultades.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnfacultades.UseVisualStyleBackColor = true;
+            this.btnfacultades.Click += new System.EventHandler(this.btnfacultades_Click);
             // 
             // btnProcesos
             // 
@@ -329,23 +346,6 @@ namespace Vista_PrototipoMenu
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.button1.Location = new System.Drawing.Point(0, 66);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(555, 66);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "MAESTROS";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // MenuPrototipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -373,7 +373,7 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Button btninicio;
         private System.Windows.Forms.Button btnmanteniminetos;
         private System.Windows.Forms.Panel panelTranportes;
-        private System.Windows.Forms.Button btnaplicaciones;
+        private System.Windows.Forms.Button btnfacultades;
         private System.Windows.Forms.Button btnProcesos;
         private System.Windows.Forms.Panel PanelAuditoria;
         private System.Windows.Forms.Button btnReportes;
@@ -385,6 +385,6 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Button btnsalir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnmaestros;
     }
 }
