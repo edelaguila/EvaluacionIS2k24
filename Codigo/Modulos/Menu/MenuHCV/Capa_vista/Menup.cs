@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad_Controlador;
 using Vista_Seguridad;
-using Vista_PrototipoMenu;
+//using Vista_PrototipoMenu;
 
 //Comentado por George Mayén 25/02/2023
 namespace MenuHCV
@@ -23,7 +23,7 @@ namespace MenuHCV
         {
             InitializeComponent();
 
-            Button[] apps = { btnseguridad, btncompras, btnVentas, btnInventario, btnBancos, btnNominas, btnHoteleria, btnPrototipo };
+            Button[] apps = { btnseguridad, btncompras, btnVentas, btnInventario, btnBancos, btnNominas, btnHoteleria, btnPrototipo};
             cn.deshabilitarApps(apps);
 
             cn.getAccesoApp(1000, apps[0]);  //Modulo Seguridad
@@ -44,52 +44,60 @@ namespace MenuHCV
             MenuSeguridad b = new MenuSeguridad();
             b.Show();
             cn.setBtitacora("1000", "Ingreso Seguridad");
-            //this.Close();
+            this.Close();
         }
 
         public void btnVentas_Click(object sender, EventArgs e)
         {
             //Vista_PrototipoMenu.MenuVentasCxc form = new Vista_PrototipoMenu.MenuVentasCxc();
-            cn.setBtitacora("2000", "Ingreso Ventas");
+            //form.Show();
+            //cn.setBtitacora("2000", "Ingreso Ventas");
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btnLogout_Click_1(object sender, EventArgs e)
         {
-            Login b = new Login();
-            cn.setBtitacora("999", "Cerro Sesion");
-            b.Show();
-            this.Close();
+            //Login b = new Login();
+            //cn.setBtitacora("999", "Cerro Sesion");
+            //b.Show();
+            //this.Close();
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btncompras_Click(object sender, EventArgs e)
         {
-            cn.setBtitacora("3000", "Ingreso Compras");
+            //Vista_PrototipoMenu.MenuComprasCxp form = new Vista_PrototipoMenu.MenuComprasCxp();
+            //form.Show();
+            //cn.setBtitacora("3000", "Ingreso Compras");
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
 
         private void btnInventario_Click(object sender, EventArgs e)
         {
-            cn.setBtitacora("4000", "Ingreso Inventarios");
+           
+            //cn.setBtitacora("4000", "Ingreso Inventarios");
             /*CapaVistaInventario.menu_inventario b = new CapaVistaInventario.menu_inventario();
-            b.Show();
-            cn.setBtitacora("4000", "Ingreso Inventario");*/
+            //b.Show();
+            //cn.setBtitacora("4000", "Ingreso Inventario");*/
         }
 
         private void btnBancos_Click(object sender, EventArgs e)
         {
-            cn.setBtitacora("5000", "Ingreso Ventas");
+            //Vista_PrototipoMenu.MenuBancos form = new Vista_PrototipoMenu.MenuBancos();
+            //form.Show();
+            //cn.setBtitacora("5000", "Ingreso Ventas");
         }
 
         private void btnNominas_Click_1(object sender, EventArgs e)
         {
-            cn.setBtitacora("6000", "Ingreso Ventas");
+            //Vista_PrototipoMenu.MenuNominas form = new Vista_PrototipoMenu.MenuNominas();
+            //form.Show();
+            //cn.setBtitacora("6000", "Ingreso Ventas");
         }
 
         private void btnHoteleria_Click(object sender, EventArgs e)
         {
-            cn.setBtitacora("7000", "Ingreso Hoteleria");
-            Vista_PrototipoMenu.MenuHoteleria frm = new Vista_PrototipoMenu.MenuHoteleria();
-            frm.Show();
+            //Vista_PrototipoMenu.MenuHoteleria form = new Vista_PrototipoMenu.MenuHoteleria();
+            //form.Show();
+            //cn.setBtitacora("7000", "Ingreso Ventas");
         }
 
         private void btnCxC_Click(object sender, EventArgs e)
@@ -104,8 +112,13 @@ namespace MenuHCV
 
         private void btnPrototipo_Click(object sender, EventArgs e)
         {
-            cn.setBtitacora("8000", "Ingreso Prototipo");
+            Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
+            form.Show();
+            //Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
+            //form.Show();
+            //cn.setBtitacora("8000", "Ingreso Prototipo");
         }
+        //Método que ingresa un valor a la bitacora de acuerdo el módulo
 
     }
 }

@@ -223,6 +223,16 @@ namespace Vista_PrototipoMenu.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logoumg {
+            get {
+                object obj = ResourceManager.GetObject("logoumg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logout_3622 {
             get {
                 object obj = ResourceManager.GetObject("logout_3622", resourceCulture);
