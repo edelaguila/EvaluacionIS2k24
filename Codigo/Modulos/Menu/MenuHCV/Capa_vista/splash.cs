@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Vista_Seguridad;
 //Comentado por George Mayén 25/02/2023
 namespace MenuHCV
 {

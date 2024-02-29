@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Seguridad_Controlador;
 using Vista_Seguridad;
-using Vista_PrototipoMenu;
+using Seguridad_Controlador;
+
 
 //Comentado por George Mayén 25/02/2023
 namespace MenuHCV
@@ -34,9 +34,6 @@ namespace MenuHCV
             cn.getAccesoApp(6000, apps[5]);  //Modulo Nominas
             cn.getAccesoApp(7000, apps[6]);  //Modulo Hoteleria
             cn.getAccesoApp(8000, apps[7]);  //Modulo Prototipo
-
-
-
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         public void btnlogout_Click(object sender, EventArgs e)
@@ -49,8 +46,9 @@ namespace MenuHCV
 
         public void btnVentas_Click(object sender, EventArgs e)
         {
-            //Vista_PrototipoMenu.MenuVentasCxc form = new Vista_PrototipoMenu.MenuVentasCxc();
-            cn.setBtitacora("2000", "Ingreso Ventas");
+            Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
+            cn.setBtitacora("2000", "Ingreso prototipo");
+
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btnLogout_Click_1(object sender, EventArgs e)
@@ -63,13 +61,13 @@ namespace MenuHCV
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btncompras_Click(object sender, EventArgs e)
         {
-            cn.setBtitacora("3000", "Ingreso Compras");
+            //cn.setBtitacora("3000", "Ingreso Compras");
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
 
         private void btnInventario_Click(object sender, EventArgs e)
         {
-            cn.setBtitacora("4000", "Ingreso Inventarios");
+            //cn.setBtitacora("4000", "Ingreso Inventarios");
             /*CapaVistaInventario.menu_inventario b = new CapaVistaInventario.menu_inventario();
             b.Show();
             cn.setBtitacora("4000", "Ingreso Inventario");*/
@@ -77,19 +75,19 @@ namespace MenuHCV
 
         private void btnBancos_Click(object sender, EventArgs e)
         {
-            cn.setBtitacora("5000", "Ingreso Ventas");
+            //cn.setBtitacora("5000", "Ingreso Ventas");
         }
 
         private void btnNominas_Click_1(object sender, EventArgs e)
         {
-            cn.setBtitacora("6000", "Ingreso Ventas");
+            //cn.setBtitacora("6000", "Ingreso Ventas");
         }
 
         private void btnHoteleria_Click(object sender, EventArgs e)
         {
-            cn.setBtitacora("7000", "Ingreso Hoteleria");
-            Vista_PrototipoMenu.MenuHoteleria frm = new Vista_PrototipoMenu.MenuHoteleria();
-            frm.Show();
+            //cn.setBtitacora("7000", "Ingreso Hoteleria");
+            //Vista_PrototipoMenu.MenuHoteleria frm = new Vista_PrototipoMenu.MenuHoteleria();
+            //frm.Show();
         }
 
         private void btnCxC_Click(object sender, EventArgs e)
@@ -104,7 +102,10 @@ namespace MenuHCV
 
         private void btnPrototipo_Click(object sender, EventArgs e)
         {
+            Vista_PrototipoMenu.MenuPrototipo frm = new Vista_PrototipoMenu.MenuPrototipo();
+            frm.Show();
             cn.setBtitacora("8000", "Ingreso Prototipo");
+
         }
 
     }

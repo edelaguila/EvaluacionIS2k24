@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Vista_Seguridad;
 using Seguridad_Controlador;
 
 //Comentado por George Mayén 25/02/2023
@@ -74,8 +73,8 @@ namespace MenuHCV
         //Método muestra el formulario de recuperación
         private void button2_Click(object sender, EventArgs e)
         {
-            recuperacion b = new recuperacion();
-            b.Show();
+            //recuperacion b = new recuperacion();
+            //b.Show();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
