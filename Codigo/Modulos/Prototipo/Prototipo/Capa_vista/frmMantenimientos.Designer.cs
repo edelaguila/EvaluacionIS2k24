@@ -1,7 +1,7 @@
 ﻿
 namespace Vista_PrototipoMenu
 {
-    partial class frmMantAlumnos
+    partial class frmMantenimientos
     {
         /// <summary>
         /// Required designer variable.
@@ -34,15 +34,15 @@ namespace Vista_PrototipoMenu
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtCarnet = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -94,23 +94,23 @@ namespace Vista_PrototipoMenu
             this.label1.TabIndex = 13;
             this.label1.Text = "Carnet";
             // 
-            // txtEstado
+            // txtTelefono
             // 
-            this.txtEstado.Location = new System.Drawing.Point(157, 209);
-            this.txtEstado.Margin = new System.Windows.Forms.Padding(2);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(181, 20);
-            this.txtEstado.TabIndex = 12;
-            this.txtEstado.Tag = "telefono_alumno";
+            this.txtTelefono.Location = new System.Drawing.Point(157, 209);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(181, 20);
+            this.txtTelefono.TabIndex = 12;
+            this.txtTelefono.Tag = "telefono_";
             // 
-            // txtDescripcion
+            // txtDireccion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(157, 186);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(181, 20);
-            this.txtDescripcion.TabIndex = 11;
-            this.txtDescripcion.Tag = "direccion_alumno";
+            this.txtDireccion.Location = new System.Drawing.Point(157, 186);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(181, 20);
+            this.txtDireccion.TabIndex = 11;
+            this.txtDireccion.Tag = "direccion_";
             // 
             // txtNombre
             // 
@@ -119,16 +119,16 @@ namespace Vista_PrototipoMenu
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(181, 20);
             this.txtNombre.TabIndex = 10;
-            this.txtNombre.Tag = "nombre_alumno";
+            this.txtNombre.Tag = "nombre_";
             // 
-            // txtId
+            // txtCarnet
             // 
-            this.txtId.Location = new System.Drawing.Point(157, 141);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(181, 20);
-            this.txtId.TabIndex = 9;
-            this.txtId.Tag = "carnet_alumno";
+            this.txtCarnet.Location = new System.Drawing.Point(157, 141);
+            this.txtCarnet.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCarnet.Name = "txtCarnet";
+            this.txtCarnet.Size = new System.Drawing.Size(181, 20);
+            this.txtCarnet.TabIndex = 9;
+            this.txtCarnet.Tag = "carnet_";
             // 
             // dataGridView1
             // 
@@ -149,14 +149,14 @@ namespace Vista_PrototipoMenu
             this.label6.TabIndex = 20;
             this.label6.Text = "Email";
             // 
-            // textBox2
+            // txtEmail
             // 
-            this.textBox2.Location = new System.Drawing.Point(502, 141);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(181, 20);
-            this.textBox2.TabIndex = 18;
-            this.textBox2.Tag = "email_alumno";
+            this.txtEmail.Location = new System.Drawing.Point(502, 141);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(181, 20);
+            this.txtEmail.TabIndex = 18;
+            this.txtEmail.Tag = "email_";
             // 
             // label7
             // 
@@ -168,15 +168,16 @@ namespace Vista_PrototipoMenu
             this.label7.TabIndex = 23;
             this.label7.Text = "Estado";
             // 
-            // textBox3
+            // txtEstado
             // 
-            this.textBox3.Location = new System.Drawing.Point(477, 237);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(181, 20);
-            this.textBox3.TabIndex = 22;
-            this.textBox3.Tag = "estatus_alumno";
-            this.textBox3.Visible = false;
+            this.txtEstado.Location = new System.Drawing.Point(477, 237);
+            this.txtEstado.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(181, 20);
+            this.txtEstado.TabIndex = 22;
+            this.txtEstado.Tag = "estatus_";
+            this.txtEstado.Text = "0";
+            this.txtEstado.Visible = false;
             // 
             // checkBox1
             // 
@@ -189,27 +190,27 @@ namespace Vista_PrototipoMenu
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // frmMantAlumnos
+            // frmMantenimientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtEstado);
-            this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.txtCarnet);
             this.Controls.Add(this.navegador1);
-            this.Name = "frmMantAlumnos";
+            this.Name = "frmMantenimientos";
             this.Tag = "7000";
             this.Text = "frmMantAlumnos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -225,15 +226,15 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtCarnet;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.CheckBox checkBox1;
     }
 }

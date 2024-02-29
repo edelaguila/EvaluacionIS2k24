@@ -76,7 +76,8 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-            frmMantAlumnos form = new frmMantAlumnos();
+            frmMantenimientos form = new frmMantenimientos();
+            form._configForm("alumnos", "alumno");
             form.MdiParent = this;
             form.Show();
             hideSubMenu();
@@ -96,6 +97,15 @@ namespace Vista_PrototipoMenu
         private void btnayuda_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "umg.chm");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmMantenimientos form = new frmMantenimientos();
+            form._configForm("maestros", "maestro");
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
         }
     }
 }
