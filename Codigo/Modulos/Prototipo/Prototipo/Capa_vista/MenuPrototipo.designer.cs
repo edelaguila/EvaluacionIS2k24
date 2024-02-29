@@ -290,11 +290,12 @@ namespace Vista_PrototipoMenu
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::Vista_PrototipoMenu.Properties.Resources.prototipofinal2;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 13);
+            this.pictureBox1.Image = global::Vista_PrototipoMenu.Properties.Resources.umg;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(277, 186);
+            this.pictureBox1.Size = new System.Drawing.Size(205, 196);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 

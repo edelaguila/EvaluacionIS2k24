@@ -184,6 +184,7 @@
     <Content Include="Resources\Bitmap1.bmp" />
     <Content Include="Resources\Logo Bytech.jpeg" />
     <Content Include="Resources\LogoSanCarlos1.png" />
+    <None Include="Resources\umg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
