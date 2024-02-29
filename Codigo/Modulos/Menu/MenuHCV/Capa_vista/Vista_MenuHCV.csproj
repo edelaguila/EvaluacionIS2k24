@@ -37,9 +37,8 @@
     <Reference Include="FontAwesome.Sharp">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
+    <Reference Include="Seguridad_Controlador">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -68,11 +67,12 @@
     <Reference Include="Vista_NominasMenu">
       <HintPath>..\..\..\..\..\..\..\..\ProyectosFinales\proyectoads22023\Codigo\Modulos\Nominas\Capa_vista\bin\Debug\Vista_NominasMenu.dll</HintPath>
     </Reference>
-    <Reference Include="Vista_PrototipoMenu">
-      <HintPath>..\..\..\..\..\..\..\..\ProyectosFinales\proyectoads22023\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Vista_PrototipoMenu.dll</HintPath>
+    <Reference Include="Vista_PrototipoMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Prototipo\Prototipo\Capa_vista\bin\Debug\Vista_PrototipoMenu.dll</HintPath>
     </Reference>
     <Reference Include="Vista_Seguridad">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Vista_Seguridad.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Vista_Seguridad.dll</HintPath>
     </Reference>
     <Reference Include="Vista_VentasCxcMenu">
       <HintPath>..\..\..\..\..\..\..\..\ProyectosFinales\proyectoads22023\Codigo\Modulos\Administracion\VentasCxc\Capa_vista\bin\Debug\Vista_VentasCxcMenu.dll</HintPath>
