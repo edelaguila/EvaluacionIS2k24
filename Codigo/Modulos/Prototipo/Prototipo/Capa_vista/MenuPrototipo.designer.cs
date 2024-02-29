@@ -44,6 +44,8 @@ namespace Vista_PrototipoMenu
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelLogo.SuspendLayout();
             this.panelTranportes.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
@@ -52,6 +54,8 @@ namespace Vista_PrototipoMenu
             // 
             // panelLogo
             // 
+            this.panelLogo.Controls.Add(this.label2);
+            this.panelLogo.Controls.Add(this.label1);
             this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
@@ -124,7 +128,7 @@ namespace Vista_PrototipoMenu
             this.btnaplicaciones.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
             this.btnaplicaciones.Size = new System.Drawing.Size(555, 66);
             this.btnaplicaciones.TabIndex = 3;
-            this.btnaplicaciones.Text = "APLICACIONES";
+            this.btnaplicaciones.Text = "FACULTADES";
             this.btnaplicaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnaplicaciones.UseVisualStyleBackColor = true;
             this.btnaplicaciones.Click += new System.EventHandler(this.btnaplicaciones_Click);
@@ -290,13 +294,38 @@ namespace Vista_PrototipoMenu
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::Vista_PrototipoMenu.Properties.Resources.prototipofinal2;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 13);
+            this.pictureBox1.Image = global::Vista_PrototipoMenu.Properties.Resources.logo_umg;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 31);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(277, 186);
+            this.pictureBox1.Size = new System.Drawing.Size(147, 146);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(193, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(330, 25);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "UNIVERSIDAD MARIANO GALVES";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(252, 108);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(169, 25);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "DE GUATEMALA";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MenuPrototipo
             // 
@@ -310,6 +339,7 @@ namespace Vista_PrototipoMenu
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Prototipo";
             this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
             this.panelTranportes.ResumeLayout(false);
             this.panelSideMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -334,5 +364,7 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Button btnayuda;
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Button btnsalir;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
