@@ -29,7 +29,6 @@ namespace Vista_PrototipoMenu
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new NavegadorVista.Navegador();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
@@ -41,15 +40,6 @@ namespace Vista_PrototipoMenu
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(4, 3);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(764, 190);
-            this.navegador1.TabIndex = 0;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // txtId
             // 
@@ -88,7 +78,7 @@ namespace Vista_PrototipoMenu
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(180, 210);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 21);
+            this.label1.Size = new System.Drawing.Size(19, 17);
             this.label1.TabIndex = 5;
             this.label1.Text = "Id";
             // 
@@ -97,7 +87,7 @@ namespace Vista_PrototipoMenu
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(180, 238);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 21);
+            this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Nombre";
             // 
@@ -115,7 +105,7 @@ namespace Vista_PrototipoMenu
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(185, 299);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 21);
+            this.label4.Size = new System.Drawing.Size(52, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "Estado";
             // 
@@ -134,7 +124,7 @@ namespace Vista_PrototipoMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 499);
+            this.ClientSize = new System.Drawing.Size(923, 499);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -144,7 +134,6 @@ namespace Vista_PrototipoMenu
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtId);
-            this.Controls.Add(this.navegador1);
             this.Name = "frmAplicaciones";
             this.Text = "1002 Mantenimiento Aplicaciones";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -155,7 +144,7 @@ namespace Vista_PrototipoMenu
 
         #endregion
 
-        private NavegadorVista.Navegador navegador1;
+        
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDescripcion;

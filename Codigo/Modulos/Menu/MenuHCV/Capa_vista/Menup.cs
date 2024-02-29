@@ -88,8 +88,8 @@ namespace MenuHCV
         private void btnHoteleria_Click(object sender, EventArgs e)
         {
             cn.setBtitacora("7000", "Ingreso Hoteleria");
-            Vista_PrototipoMenu.MenuHoteleria frm = new Vista_PrototipoMenu.MenuHoteleria();
-            frm.Show();
+            Vista_PrototipoMenu.frmAplicaciones frm = new Vista_PrototipoMenu.frmAplicaciones();
+           frm.Show();
         }
 
         private void btnCxC_Click(object sender, EventArgs e)
