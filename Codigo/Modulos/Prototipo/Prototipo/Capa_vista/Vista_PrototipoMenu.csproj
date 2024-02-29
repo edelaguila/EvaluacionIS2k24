@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaVistaNav">
+      <HintPath>..\..\..\..\Componentes\Navegador\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
+    </Reference>
     <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Controlador_PrototipoMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -49,7 +52,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\ProyectosdeReferencia\Prototipos\proyectois2k23\Codigo\Componentes\Seguridad\Seguridad\Capa_controlador\bin\Debug\Seguridad_Controlador.dll</HintPath>
+      <HintPath>..\..\..\..\Componentes\Navegador\CapaVista\bin\Debug\Seguridad_Controlador.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -65,11 +68,17 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAplicaciones.cs">
+    <Compile Include="frmMantFacultades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAplicaciones.Designer.cs">
-      <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    <Compile Include="frmMantFacultades.Designer.cs">
+      <DependentUpon>frmMantFacultades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantMaestros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantMaestros.Designer.cs">
+      <DependentUpon>frmMantMaestros.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPrototipo.cs">
       <SubType>Form</SubType>
@@ -85,8 +94,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmAplicaciones.resx">
-      <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    <EmbeddedResource Include="frmMantFacultades.resx">
+      <DependentUpon>frmMantFacultades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantMaestros.resx">
+      <DependentUpon>frmMantMaestros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrototipo.resx">
       <DependentUpon>MenuPrototipo.cs</DependentUpon>

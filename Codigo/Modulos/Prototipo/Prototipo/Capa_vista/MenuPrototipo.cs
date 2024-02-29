@@ -76,9 +76,9 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-            frmAplicaciones form = new frmAplicaciones();
-            form.MdiParent = this;
-            form.Show();
+            frmMantFacultades form = new frmMantFacultades();
+           form.MdiParent = this;
+           form.Show();
             hideSubMenu();
         }
         //Método que muestra el formulario indicado
@@ -97,5 +97,10 @@ namespace Vista_PrototipoMenu
         {
             Help.ShowHelp(this, "umg.chm");            
         }
-     }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
