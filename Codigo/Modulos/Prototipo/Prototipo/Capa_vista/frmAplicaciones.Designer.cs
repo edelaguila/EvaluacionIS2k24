@@ -29,7 +29,7 @@ namespace Vista_PrototipoMenu
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new NavegadorVista.Navegador();
+         
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
@@ -44,12 +44,7 @@ namespace Vista_PrototipoMenu
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(4, 3);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(764, 190);
-            this.navegador1.TabIndex = 0;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
+            
             // 
             // txtId
             // 
@@ -144,7 +139,7 @@ namespace Vista_PrototipoMenu
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtId);
-            this.Controls.Add(this.navegador1);
+     
             this.Name = "frmAplicaciones";
             this.Text = "1002 Mantenimiento Aplicaciones";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -155,7 +150,7 @@ namespace Vista_PrototipoMenu
 
         #endregion
 
-        private NavegadorVista.Navegador navegador1;
+       
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDescripcion;

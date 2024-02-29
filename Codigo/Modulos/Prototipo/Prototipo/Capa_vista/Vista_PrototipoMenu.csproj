@@ -31,7 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="CapaVista_RegAlum">
+      <HintPath>..\..\..\Registro_Alumnos\CapaVista_RegAlum\bin\Debug\CapaVista_RegAlum.dll</HintPath>
+    </Reference>
     <Reference Include="Controlador_PrototipoMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.dll</HintPath>
@@ -42,14 +44,11 @@
     <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="NavegadorVista">
-      <HintPath>..\..\..\..\..\..\..\ProyectosdeReferencia\Prototipos\proyectois2k23\Codigo\Componentes\Navegador\Vista\bin\Debug\NavegadorVista.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\ProyectosdeReferencia\Prototipos\proyectois2k23\Codigo\Componentes\Seguridad\Seguridad\Capa_controlador\bin\Debug\Seguridad_Controlador.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

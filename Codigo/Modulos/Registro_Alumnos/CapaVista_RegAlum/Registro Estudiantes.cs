@@ -9,19 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad_Controlador;
 
-namespace Vista_PrototipoMenu
+namespace CapaVista_RegAlum
 {
-    public partial class frmAplicaciones : Form
+    public partial class Registro_Estudiantes : Form
     {
-        Controlador cn = new Controlador();
-        public frmAplicaciones()
+        public Registro_Estudiantes()
         {
+            Seguridad_Controlador.Controlador cont = new Seguridad_Controlador.Controlador();
             InitializeComponent();
+            navegador1.config("alumnos", this);
+
         }
 
-        private void navegador1_Load(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
-            
 
         }
     }
